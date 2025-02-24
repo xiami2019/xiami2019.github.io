@@ -23,11 +23,39 @@
       }
     }  
   </script>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 16px; /* 增加默认字体大小 */
+      line-height: 1.6; /* 适当增加行高 */
+    }
+    
+    p, li, a, strong {  /* 添加 br 标签 */
+      font-size: 16px; /* 段落字体大小 */
+    }
+    
+    papertitle {
+      font-size: 18px; /* 论文标题字体大小 */
+    }
+    
+    papertitle a {  /* 添加这条规则 */
+      font-size: 18px;
+    }
+    
+    heading {
+      font-size: 22px; /* 标题字体大小 */
+    }
+    
+    heading a {  /* 添加这条规则 */
+      font-size: 22px;
+    }
+  </style>
 </head>
 
 <body>
   <table
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -136,9 +164,9 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/say_idk.png' width="250">
+                      <img src='images/say_idk.png' width="350">
                     </div>
-                    <img src='images/say_idk.png' width="250">
+                    <img src='images/say_idk.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -152,6 +180,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://arxiv.org/abs/2401.13275">
                     <papertitle>Can AI Assistants Know What They Don't Know?</papertitle>
                   </a>
@@ -166,7 +195,7 @@
                   <a href="https://github.com/OpenMOSS/Say-I-Dont-Know">github</a>
                   /
                   <a href="https://open-moss.com/en/knowledge-boundary/">blog on OpenMOSS</a>
-                  <p></p>
+                  </p>
                   <p>
                     We ask the question "Can AI assistants know what they don't know and express them through natural
                     language?" To answer this question, we construct a model-specific "I don't know" (Idk) dataset for
@@ -180,9 +209,9 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/HalluQA.png' width="250">
+                      <img src='images/HalluQA.png' width="350">
                     </div>
-                    <img src='images/HalluQA.png' width="250">
+                    <img src='images/HalluQA.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -196,6 +225,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://arxiv.org/pdf/2310.03368">
                     <papertitle>Evaluating Hallucinations in Chinese Large Language Models
                     </papertitle>
@@ -210,7 +240,7 @@
                   <a href="https://github.com/OpenMOSS/HalluQA">github</a>
                   /
                   <a href="https://zhuanlan.zhihu.com/p/663070312">blog</a>
-                  <p></p>
+                  </p>
                   <p>
                     We introduce HalluQA, a benchmark with 450 adversarial questions to assess hallucinations in Chinese large language models, covering diverse domains and cultural contexts. It targets imitative falsehoods and factual errors, built using GLM-130B and ChatGPT, and evaluated automatically with GPT-4. Testing 24 models like ERNIE-Bot and Qwen, 18 scored below 50% non-hallucination rates, showing its difficulty. We analyze hallucination types, causes, and prioritization for different models.
                   </p>
@@ -220,9 +250,9 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/CLAIF.png' width="250">
+                      <img src='images/CLAIF.png' width="350">
                     </div>
-                    <img src='images/CLAIF.png' width="250">
+                    <img src='images/CLAIF.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -236,6 +266,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://aclanthology.org/2023.findings-acl.707.pdf">
                     <papertitle>Improving Contrastive Learning of Sentence Embeddings from AI Feedback
                     </papertitle>
@@ -250,9 +281,9 @@
                   <a href="https://github.com/xiami2019/CLAIF">github</a>
                   /
                   <a href="https://zhuanlan.zhihu.com/p/627201325">blog</a>
-                  <p></p>
+                  </p>
                   <p>
-                    We propose Contrastive Learning of sentence embeddings from AI Feedback (CLAIF) to enhance contrastive learning in NLP. Unlike typical methods struggling with sample pair quality due to language’s discrete nature, CLAIF uses AI feedback from large language models to create fine-grained similarity scores for sample pairs. Combining this with human feedback, it improves supervised contrastive learning. Experiments show CLAIF outperforms other methods on semantic textual similarity and transfer learning tasks.
+                    We propose Contrastive Learning of sentence embeddings from AI Feedback (CLAIF) to enhance contrastive learning in NLP. Unlike typical methods struggling with sample pair quality due to language's discrete nature, CLAIF uses AI feedback from large language models to create fine-grained similarity scores for sample pairs. Combining this with human feedback, it improves supervised contrastive learning. Experiments show CLAIF outperforms other methods on semantic textual similarity and transfer learning tasks.
                   </p>
                 </td>
               </tr>
@@ -260,9 +291,9 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/UAR_framework.png' width="250">
+                      <img src='images/UAR_framework.png' width="350">
                     </div>
-                    <img src='images/UAR_framework.png' width="250">
+                    <img src='images/UAR_framework.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -276,6 +307,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://aclanthology.org/2024.findings-emnlp.999.pdf">
                     <papertitle>Unified Active Retrieval for Retrieval Augmented Generation
                     </papertitle>
@@ -289,7 +321,7 @@
                   /
                   <a href="https://github.com/xiami2019/UAR">github</a> /
                   <a href="https://mp.weixin.qq.com/s/4i5lWgTkp1GpsCJzdq6PEg">blog</a>
-                  <p></p>
+                  </p>
                   <p>
                     We introduce Unified Active Retrieval (UAR) to improve Retrieval-Augmented Generation (RAG) by addressing inefficiencies in existing active retrieval methods. UAR uses four orthogonal criteria as simple classification tasks for better retrieval timing, with minimal extra cost. Supported by UAR-Criteria, it handles diverse instructions effectively. Experiments show UAR outperforms others in accuracy and downstream tasks.
                   </p>
@@ -299,9 +331,9 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/SIUO.png' width="250">
+                      <img src='images/SIUO.png' width="350">
                     </div>
-                    <img src='images/SIUO.png' width="250">
+                    <img src='images/SIUO.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -315,6 +347,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://arxiv.org/pdf/2406.15279">
                     <papertitle>Cross-modality safety alignment
                     </papertitle>
@@ -327,7 +360,7 @@
                   <a href="https://arxiv.org/pdf/2406.15279">pdf</a>
                   /
                   <a href="https://sinwang20.github.io/SIUO/">Project Page</a>
-                  <p></p>
+                  </p>
                   <p>
                     We present the Safe Inputs but Unsafe Output (SIUO) challenge to assess cross-modality safety in Artificial General Intelligence (AGI), where individually safe modalities can combine to produce unsafe outputs. Unlike prior studies on single-modality risks, SIUO targets complex interactions across 9 safety domains, including self-harm and privacy violations. Our benchmark tests reveal significant vulnerabilities in models like GPT-4V and LLaVA, highlighting their limitations in handling real-world scenarios safely.
                   </p>
@@ -337,9 +370,9 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/User_simulator.png' width="250">
+                      <img src='images/User_simulator.png' width="350">
                     </div>
-                    <img src='images/User_simulator.png' width="250">
+                    <img src='images/User_simulator.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -353,6 +386,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://aclanthology.org/2022.findings-emnlp.90.pdf">
                     <papertitle>Is MultiWOZ a Solved Task? An Interactive TOD Evaluation Framework with User Simulator
                     </papertitle>
@@ -365,19 +399,19 @@
                   <a href="https://aclanthology.org/2022.findings-emnlp.90.pdf">pdf</a>
                   /
                   <a href="https://github.com/xiami2019/User-Simulator">github</a>
-                  <p></p>
+                  </p>
                   <p>
-                    We propose Contrastive Learning of sentence embeddings from AI Feedback (CLAIF) to enhance contrastive learning in NLP. Unlike typical methods struggling with sample pair quality due to language’s discrete nature, CLAIF uses AI feedback from large language models to create fine-grained similarity scores for sample pairs. Combining this with human feedback, it improves supervised contrastive learning. Experiments show CLAIF outperforms other methods on semantic textual similarity and transfer learning tasks.
+                    We propose Contrastive Learning of sentence embeddings from AI Feedback (CLAIF) to enhance contrastive learning in NLP. Unlike typical methods struggling with sample pair quality due to language's discrete nature, CLAIF uses AI feedback from large language models to create fine-grained similarity scores for sample pairs. Combining this with human feedback, it improves supervised contrastive learning. Experiments show CLAIF outperforms other methods on semantic textual similarity and transfer learning tasks.
                   </p>
                 </td>
               </tr>
               <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                <td style="padding:20px;width:40%;vertical-align:middle">
+                <td style="padding:20px;width:40%;vertical-align:top">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/OthelloGPT.jpg' width="190">
+                      <img src='images/OthelloGPT.jpg' width="250">
                     </div>
-                    <img src='images/OthelloGPT.jpg' width="190">
+                    <img src='images/OthelloGPT.jpg' width="250">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -391,6 +425,7 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://arxiv.org/abs/2402.12201">
                     <papertitle>Dictionary Learning Improves Patch-Free Circuit Discovery in Mechanistic
                       Interpretability: A Case Study on Othello-GPT</papertitle>
@@ -403,7 +438,7 @@
                   <a href="https://arxiv.org/pdf/2402.12201.pdf">pdf</a>
                   /
                   <a href="https://open-moss.com/en/DictCircuits_Othello/">blog on OpenMOSS</a>
-                  <p></p>
+                  </p>
                   <p>
                     Sparse dictionary learning has been a rapidly growing technique in mechanistic interpretability to
                     attack superposition and extract more human-understandable features from model activations. We ask a
@@ -434,9 +469,9 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/sg2_arch.png' width="250">
+                      <img src='images/sg2_arch.png' width="350">
                     </div>
-                    <img src='images/sg2_arch.png' width="250">
+                    <img src='images/sg2_arch.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -450,23 +485,25 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://github.com/OpenMOSS/SpeechGPT-2.0-preview">
                     <papertitle>SpeechGPT-2.0-preview</papertitle>
                   </a>
                   <br>
                   Mainly responsible for text data curation (including pre-training and post-training).
+                  </p>
                   <p>
                     We introduce SpeechGPT 2.0-preview, our first human-like real-time interaction system, trained on millions of hours of Chinese speech data. This end-to-end model offers low-latency, natural responses with human-like expressions, supporting interruptions and multi-style emotional control. It excels in role-playing, vocal talents like poetry and dialects, and integrates text capabilities for tool use and searches. Currently, it supports only Chinese, with no English training yet.
                   </p>
                 </td>
               </tr>
               <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
+                <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/o1_roadmap.png' width="190">
+                      <img src='images/o1_roadmap.png' width="350">
                     </div>
-                    <img src='images/o1_roadmap.png' width="190">
+                    <img src='images/o1_roadmap.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -480,24 +517,26 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
                   <a href="https://arxiv.org/pdf/2412.14135">
                     <papertitle>Survey Paper: Scaling of Search and Learning: A Roadmap to Reproduce o1
                       from Reinforcement Learning Perspective</papertitle>
                   </a>
                   <br>
                   First co-author.
+                  </p>
                   <p>
-                    We analyze OpenAI’s o1, an AI milestone excelling in reasoning tasks, driven by reinforcement learning. Unlike alternatives like knowledge distillation, limited by teacher models, our roadmap focuses on four key components: policy initialization for human-like reasoning, reward design for effective guidance, search for high-quality solutions, and learning to enhance performance with more data and parameters. These elements highlight how learning and search power o1’s success, influencing LLM development.
+                    We analyze OpenAI's o1, an AI milestone excelling in reasoning tasks, driven by reinforcement learning. Unlike alternatives like knowledge distillation, limited by teacher models, our roadmap focuses on four key components: policy initialization for human-like reasoning, reward design for effective guidance, search for high-quality solutions, and learning to enhance performance with more data and parameters. These elements highlight how learning and search power o1's success, influencing LLM development.
                   </p>
                 </td>
               </tr>
               <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                <td style="padding:20px;width:30%;vertical-align:middle">
+                <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
-                      <img src='images/moss.png' width="190">
+                      <img src='images/moss.png' width="350">
                     </div>
-                    <img src='images/moss.png' width="190">
+                    <img src='images/moss.png' width="350">
                   </div>
                   <script type="text/javascript">
                     function malle_start() {
@@ -511,11 +550,13 @@
                   </script>
                 </td>
                 <td style="padding:20px;width:70%;vertical-align:top">
+                  <p></p>
                   <a href="http://moss.fastnlp.top/">
                     <papertitle>MOSS: A Conversational Language Model</papertitle>
                   </a>
                   <br>
                   Mainly responsible for data synthesis in the post-training stage, including multi-turn dialogue, safety alignment, honest alignment.
+                  </p>
                   <p>
                     MOSS is a conversational language model like ChatGPT. It is capable of following users' instructions
                     to perform various natural language tasks including question answering, generating text, summarzing
