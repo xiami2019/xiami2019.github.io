@@ -68,7 +68,7 @@
                     <name>Qinyuan Cheng<img style="max-height:70px;vertical-align: middle;"
                         src="images/chinese_name.png" style="max-height:70px" /></name>
                   </p>
-                  <p>I am a forth-year PhD student at Fudan University, advised by Prof. <a
+                  <p>Hi! I am a forth-year PhD student at Fudan University, advised by Prof. <a
                       href="https://xpqiu.github.io/">Xipeng Qiu</a>. 
                       I received my bachelor's degree from Sun Yat-sen University, advised by Prof. <a href="https://scholar.google.com.sg/citations?user=9LkhGDgAAAAJ&hl=zh-CN">Hanjiang Lai</a>. 
                       I am currently interning at <a href="https://www.shlab.org.cn/">Shanghai AI Laboratory</a> as a LLM researcher (2023.5-Now).
@@ -331,6 +331,45 @@
                 <td style="padding:20px;width:40%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='malle_image'>
+                      <img src='images/User_simulator.png' width="350">
+                    </div>
+                    <img src='images/User_simulator.png' width="350">
+                  </div>
+                  <script type="text/javascript">
+                    function malle_start() {
+                      document.getElementById('malle_image').style.opacity = "1";
+                    }
+
+                    function malle_stop() {
+                      document.getElementById('malle_image').style.opacity = "0";
+                    }
+                    malle_stop()
+                  </script>
+                </td>
+                <td style="padding:20px;width:70%;vertical-align:top">
+                  <p>
+                  <a href="https://aclanthology.org/2022.findings-emnlp.90.pdf">
+                    <papertitle>Is MultiWOZ a Solved Task? An Interactive TOD Evaluation Framework with User Simulator
+                    </papertitle>
+                  </a>
+                  <br>
+                  <strong>Qinyuan Cheng</strong>*, Linyang Li*, Guofeng Quan, Feng Gao, Xiaofeng Mou, Xipeng Qiu
+                  <br>
+                  EMNLP 2022 Findings &nbsp
+                  <br>
+                  <a href="https://aclanthology.org/2022.findings-emnlp.90.pdf">pdf</a>
+                  /
+                  <a href="https://github.com/xiami2019/User-Simulator">github</a>
+                  </p>
+                  <p>
+                    We propose an interactive evaluation framework for Task-Oriented Dialogue (TOD) systems to address the policy mismatch in current methods, where user utterances don’t align with varied system responses. Our approach uses a goal-oriented user simulator built on pre-trained models to generate dialogues, introducing sentence- and session-level scores for fluency and coherence. Experiments show RL-based TOD systems trained with our simulator achieve 98% inform and success rates on MultiWOZ, with the new scores enhancing response quality assessment.
+                  </p>
+                </td>
+              </tr>
+              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+                <td style="padding:20px;width:40%;vertical-align:middle">
+                  <div class="one">
+                    <div class="two" id='malle_image'>
                       <img src='images/SIUO.png' width="350">
                     </div>
                     <img src='images/SIUO.png' width="350">
@@ -363,45 +402,6 @@
                   </p>
                   <p>
                     We present the Safe Inputs but Unsafe Output (SIUO) challenge to assess cross-modality safety in Artificial General Intelligence (AGI), where individually safe modalities can combine to produce unsafe outputs. Unlike prior studies on single-modality risks, SIUO targets complex interactions across 9 safety domains, including self-harm and privacy violations. Our benchmark tests reveal significant vulnerabilities in models like GPT-4V and LLaVA, highlighting their limitations in handling real-world scenarios safely.
-                  </p>
-                </td>
-              </tr>
-              <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-                <td style="padding:20px;width:40%;vertical-align:middle">
-                  <div class="one">
-                    <div class="two" id='malle_image'>
-                      <img src='images/User_simulator.png' width="350">
-                    </div>
-                    <img src='images/User_simulator.png' width="350">
-                  </div>
-                  <script type="text/javascript">
-                    function malle_start() {
-                      document.getElementById('malle_image').style.opacity = "1";
-                    }
-
-                    function malle_stop() {
-                      document.getElementById('malle_image').style.opacity = "0";
-                    }
-                    malle_stop()
-                  </script>
-                </td>
-                <td style="padding:20px;width:70%;vertical-align:top">
-                  <p>
-                  <a href="https://aclanthology.org/2022.findings-emnlp.90.pdf">
-                    <papertitle>Is MultiWOZ a Solved Task? An Interactive TOD Evaluation Framework with User Simulator
-                    </papertitle>
-                  </a>
-                  <br>
-                  <strong>Qinyuan Cheng</strong>*, Linyang Li*, Guofeng Quan, Feng Gao, Xiaofeng Mou, Xipeng Qiu
-                  <br>
-                  EMNLP 2022 Findings &nbsp
-                  <br>
-                  <a href="https://aclanthology.org/2022.findings-emnlp.90.pdf">pdf</a>
-                  /
-                  <a href="https://github.com/xiami2019/User-Simulator">github</a>
-                  </p>
-                  <p>
-                    We propose Contrastive Learning of sentence embeddings from AI Feedback (CLAIF) to enhance contrastive learning in NLP. Unlike typical methods struggling with sample pair quality due to language's discrete nature, CLAIF uses AI feedback from large language models to create fine-grained similarity scores for sample pairs. Combining this with human feedback, it improves supervised contrastive learning. Experiments show CLAIF outperforms other methods on semantic textual similarity and transfer learning tasks.
                   </p>
                 </td>
               </tr>
